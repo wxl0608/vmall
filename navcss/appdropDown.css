@@ -1,0 +1,1041 @@
+.header{
+    min-width: 1200px;
+    height: 41px;
+    padding: 18px 0 15px 0;
+    background: #fff;
+    position: relative;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    line-height: 1.5;
+    box-shadow: 0 0 46px rgba(0,0,0,0.03);
+    z-index: 39;
+}
+.header .layout{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header .layout .left{
+    float: left;
+}
+.header .layout .left .headImg{
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+}
+.header .layout .left img{
+    height: 36px;
+    display:block;
+    padding-left: 77px; 
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+.tipText{
+    height: 10px;
+    font-size: 10px;
+    opacity: 0;
+    background-color: honeydew;
+    color:black;
+    border: 1px solid black;
+    padding: 5px 0;
+    position: absolute;
+    top: 43px;
+    left: 172px;
+}
+.tooltip:hover .tipText{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.header .layout .left .wordimg{
+    margin-left: 8px;
+}
+.header .layout .left .wordimg img{
+    display: block;
+    height: 24px;
+    float: left;
+    padding-top: 8px;
+    padding-left: 25px;   
+}
+.header .layout .left .headWord{
+    float: left;
+}
+.header .layout .left .headWord .headerWord a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 8px;
+    top: 8px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 19px;
+}
+.header .layout .left .headWord .headerWord a:hover{
+    color: red;
+}
+.header .layout .right .form{
+    width: 320px;
+    height: 30px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    position: relative;
+    margin-right: 92px;
+    margin-top: 5px;
+}
+.header .layout .right .form .input{
+    border: none;
+    outline: none;
+    display: block;
+    padding-left: 10px;
+    width: 285px;
+    height: 30px;
+    line-height: 30px;
+    background: transparent;
+    float: left;
+}
+.header .layout .right .form .submit{
+    width: 35px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    background: transparent;
+}
+.header .layout .right .form i{
+    color: #353535;
+    font-size: 16px;
+    font-weight: bolder;
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+.header .layout .right .form i:hover{
+    color: #a4a4a4;
+}
+
+
+
+.dropBtnphone{
+    background-color: #faf9f9;
+    color: #a4a4a4;
+    border: none;
+    cursor: pointer;
+}
+.dropDownphone{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.dropContentphone{
+    position: absolute;
+    display: none;
+    background: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    border-radius: 8px 0 8px 8px;
+    right: 0;
+}
+.dropDownphone:hover .dropBtnphone{
+    background-color: white;
+}
+
+.dropDownphone:hover .dropContentphone{
+    display: block;
+}
+
+
+.dropContentphone .huaweiapp{
+    padding: 20px 0 20px 0;
+    width: 244px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 24px;
+    overflow: hidden;
+    /* display: inline-block; */
+}
+/* .huaweiapp::after {
+    content: '';
+    display: block;
+    clear: both;
+ } */
+.dropContentphone .huaweiapp .appcontent a{
+    float: left;
+}
+.dropContentphone .huaweiapp .appcontent .appimg{
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin-right: 12px;
+    
+}
+.dropContentphone .huaweiapp .appcontent .huaweiappword{
+    float: left;
+    line-height: 18px;
+}
+.dropContentphone .huaweiapp .appcontent .huaweiappword h2{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+.dropContentphone .huaweiapp .appcontent .huaweiappword p{
+    color: #cb242b;
+    font-size: 12px;
+    margin-top:2px;
+    line-height: 16px;
+}
+.dropContentphone .huaweiapp .appcontent .huaweiappword .special{
+    color: #848384;
+}
+.dropContentphone .huaweiapp .huaweiappword i:after{
+    content: "";
+    border: none;
+}
+.dropContentphone .huaweiapp:last-child{
+    border: none;
+}
+
+/* 更多精彩 */
+.dropBtn{
+    background-color: #faf9f9;
+    color: #a4a4a4;
+    border: none;
+    cursor: pointer;
+}
+.dropDown{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.dropContent{
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    border-radius: 8px 0 8px 8px;
+}
+.dropDown:hover .dropBtn{
+    background-color: white;
+}
+.dropContent a{
+    padding: 8px 10px;
+    color: #a4a4a4;
+    text-decoration: none;
+    display: block;
+}
+.dropContent a:hover{
+    color: red;
+}
+.dropDown:hover .dropContent{
+    display: block;
+}
+
+
+
+/* 网站导航 */
+.dropBtnWeb{
+    background-color: #faf9f9;
+    color: #a4a4a4;
+    border: none;
+    cursor: pointer;
+}
+.dropDownWeb{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.dropContentWeb{
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    border-radius: 8px 0 8px 8px;
+    right:0;
+}
+.dropDownWeb:hover .dropBtnWeb{
+    background-color: white;
+}
+.dropContentWeb a{
+    /* padding: 8px 10px; */
+    color: #a4a4a4;
+    text-decoration: none;
+    display: block;
+}
+.dropContentWeb a:hover{
+    color: red;
+}
+.dropDownWeb:hover .dropContentWeb{
+    display: block;
+}
+.dropContentWeb .webnav{
+    width: 890px;
+    line-height: 20px;
+    
+}
+.dropContentWeb .webnav ul{
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    list-style: none;
+    float: left;
+    padding: 0;
+    width: 160px;
+    margin: 22px 8px 20px 8px;
+}
+.dropContentWeb .webnav ul .item{
+    float: left;
+    width: 80px;
+    font-weight: lighter;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+/* 手机版 */
+*{
+    margin: 0;
+    color: #3a3a3a;
+    /* overflow: hidden; */
+}
+/* body{
+    width: 1366px;
+} */
+#container{
+    /* display: flex; */
+    /* justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 1200px; */
+}
+.navTop{
+    display: flex;
+    margin: 0;
+    padding: 7px 96px 7px 75px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    background-color: #faf9f9;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 66;
+}
+.navTop span{
+    display: inline-block;
+    padding: 0;
+}
+.navTop a{
+    display: inline-block;
+    padding: 0 4px;
+    color:#a4a4a4;
+    text-decoration: none;
+    font-size: 10px;
+}
+.navTop a:hover{
+    color:red;
+}
+.navTop a:after{
+    padding-left: 6px;
+    position: absolute;
+    content: "";
+    border:1px solid transparent;
+    border-right:1px solid  #d3d3d3;
+    top: 14px;
+    height: 10px;
+}
+.navTop i:after{
+    padding-left: 6px;
+    position: absolute;
+    content: "";
+    border:1px solid transparent;
+    border-right:1px solid  #d3d3d3;
+    top: 8px;
+    height: 10px;
+}
+
+.navTop span a:last-child:after{
+    content:" ";
+    border: none;
+}
+.navTop .choose a:first-child:after{
+    content: "";
+    border: none;
+}   
+.navTop .choose a:first-child{
+    padding-right: 2px;
+}
+.dropBtn .myicon{
+    font-size: 10px;
+}
+.dropBtnWeb .myicon{
+    font-size: 10px;
+}
+.dropBtnphone .myicon{
+    font-size: 10px;
+}
+.dropContentWeb .webnav .home{
+    width: 60px;
+    height: 60px;
+    float: left;
+    color: #777;
+    border-radius: 25px;
+    background: #f7f7f7;
+    display: block;
+    margin: 37px 46px 0 49px;
+    text-align: center;
+}
+.dropContentWeb .webnav .myicon{
+    font-size: 25px;
+}
+.dropContent a:after{
+    content: "";
+    border: none;
+}
+.dropContentWeb a:after{
+    content: "";
+    border: none;
+}
+
+.dropBtncart{
+    background-color: #f2f2f2;
+    color: #a4a4a4;
+    border: none;
+    cursor: pointer;
+}
+.dropDowncart{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.dropContentcart{
+    width: 460px;
+    height: 230px;
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    border-radius: 8px 0 8px 8px;
+    right: 0;
+}
+.dropDowncart:hover .dropBtncart{
+    background-color: white;
+}
+.dropContentcart a{
+    padding: 8px 10px;
+    color: #a4a4a4;
+    text-decoration: none;
+    display: block;
+}
+.dropContentcart a:hover{
+    color: red;
+}
+.dropDowncart:hover .dropContentcart{
+    display: block;
+}
+.dropContentcart .carthome{
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+}
+.dropContentcart .myicon{
+    font-size: 66px;
+    font-weight: lighter;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+.dropContentcart .cartword{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 124px;
+    top: 145px;
+}
+.dropContentcart .cartword p{
+    color:#a4a4a4;
+    text-decoration: none;
+    font-size: 14px;
+}
+.ano{
+    text-align: center;
+}
+
+.lastNav {
+    position: relative;
+    z-index: 1000;
+    top: -504px;
+    left: 74px;
+    width: 1200px;
+    height: 88px;
+}
+
+.lastNav ul {
+    list-style-type: none;
+    background: #FFF;
+    text-align: center;
+    border-top: 0 none;
+    width: 1200px;
+    height: 88px;
+    border-radius: 10px;
+    box-shadow: 0 2px 26px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navWord {
+    float: left;
+}
+
+.navWord {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* .imgWord{
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.imgWord {
+    display: flex;
+    position: relative;
+    left: -122px;
+    top: 47px;
+}
+
+.navWord {
+    position: relative;
+    top: 18px;
+    left: 13px;
+}
+
+.navWord span {
+    margin-top: 1px;
+    font-size: 14px;
+    color: #999;
+}
+
+.lastNav a {
+    text-decoration: none;
+}
+
+.navWord p {
+    margin-top: 1px;
+    font-size: 14px;
+    color: #3a3a3a;
+    display: block;
+    padding-left: 8px;
+}
+
+.imgWord span {
+    border-radius: 5px;
+    font-size: 13px;
+    display: block;
+    width: 66px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #e47b7f;
+    color: #de5b60;
+    margin-right: 8px;
+}
+
+.imgWord span:hover {
+    background-color: #de5b60;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.imgWord p {
+    display: block;
+    width: 68px;
+    height: 22px;
+    text-align: center;
+    background: #595454;
+    color: #fde4b3;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.imgWord p:hover {
+    background: #000000;
+    cursor: pointer;
+}
+
+.lastNav img {
+    width: 52px;
+    height: 52px;
+    display: block;
+    margin-top: 19px;
+    margin-left: -15px;
+    float: left;
+}
+
+/* second */
+
+.second ul {
+    width: 590px;
+}
+
+.background1 {
+    width: 35px;
+    height: 35px;
+    background-color: #94cefe;
+    border-radius: 100%;
+}
+
+.background2 {
+    width: 35px;
+    height: 35px;
+    background-color: #68d2cb;
+    border-radius: 100%;
+}
+
+.background3 {
+    width: 35px;
+    height: 35px;
+    background-color: #eb7971;
+    border-radius: 100%;
+}
+
+.background4 {
+    width: 35px;
+    height: 35px;
+    background-color: #f2bc33;
+    border-radius: 100%;
+}
+
+.background5 {
+    width: 35px;
+    height: 35px;
+    background-color: #93cffe;
+    border-radius: 100%;
+}
+
+.background6 {
+    width: 35px;
+    height: 35px;
+    background-color: #8249b6;
+    border-radius: 100%;
+}
+
+.icon i {
+    font-size: 25px;
+    text-align: center;
+}
+
+.second a {
+    display: inline-block;
+    position: relative;
+    left: -83px;
+    top: 18px;
+    margin-left: 41px;
+}
+
+.second a:first-child {
+    margin: 0;
+}
+
+.lWords span:hover {
+    color: red;
+}
+
+.lWords {
+    position: relative;
+    left: -18px;
+    ;
+}
+
+.lWords span {
+    font-size: 14px;
+    color: #848484;
+}
+
+/* third */
+
+.third {
+    width: 310px;
+    height: 88px;
+}
+
+.thirdContainer {
+    position: relative;
+    right: -547px;
+    top: 0px;
+}
+
+.notice {
+    margin-top: 18px;
+}
+
+.notice span {
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.notice span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.notice i {
+    font-size: 13px;
+    position: relative;
+    right: -33px;
+}
+
+.rotationTip {
+    margin-top: 10px;
+}
+
+.rotationTip span {
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    left: -93px;
+}
+
+/* 轮播公告 */
+
+.announcement {
+    height: 40px;
+    width: 190px;
+    overflow: hidden;
+    list-style: none;
+    /* display: block; */
+    position: relative;
+    bottom: 62px;
+    left: 1046px;
+    z-index: 10000;
+    margin-top: 0px;
+}
+
+.announce {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    color: #6f6f6f;
+    font-size: 12px;
+    padding: 12px 0;
+}
+
+h1{
+    text-align: center;
+}
+/* footer */
+.footer{
+    width: 1200px;
+}
+.slogan{
+    overflow: hidden;
+    width: 100%;
+    padding: 22px 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.slogan li{
+    float: left;
+    margin-left:82px;
+    padding-left: 54px;  
+}
+.slogan li:first-child{
+    padding: 0;
+}
+.slogan span{
+    position: relative;
+    bottom: 15px;
+    left: 18px;
+}
+.service{
+    padding: 35px 0 24px 0;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e5e5e5;
+}
+.leftserv{
+    width: 1000px;
+    height: 155px;
+    padding-top: 5px;
+    border-right: 1px solid #e5e5e5;
+}
+.ul{
+   list-style: none;
+   float: left; 
+   margin-left: 46px;
+}
+.ul span{
+    font-size: 14px;
+    color: #333;
+    display: block;
+    padding-bottom:7px; 
+}
+.ul p{
+    font-size: 12px;
+    color: #777;
+    display: block;
+    padding-top: 6px;
+}
+.rightserv{
+    width: 279px;
+    min-height: 160px;
+    margin-top: 2px;
+    text-align: center;
+}
+dd{
+    margin-top: 3px;
+}
+.dd{
+    display: block;
+    width: 170px;
+    height: 34px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 34px;
+    background: #333;
+    cursor: pointer;
+    border-radius: 17px;
+}
+.dd i{
+    font-size: 14px;
+    color: #fff;
+    
+}
+.dl p{
+    font-size: 14px;
+}
+.dlicon{
+    margin-top: 29px;
+}
+
+.dlicon span{
+    font-size: 14px;
+    display: inline-block;
+    margin-left: -30px;
+}
+.dlicon i{
+    display: inline-block;
+    font-size: 24px;
+    padding-left:9px;
+}
+
+.leftNav{
+    width: 200px;
+    height: 440px;
+    background-color: rgba(255,255,255,0.95);
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: relative;
+    top: -531px;
+    left: 74px;
+    z-index: 100;
+}
+.leftNav ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.leftContainer{
+    width: 200px;
+    height: 74px;
+    margin: 0;
+    padding: 0;
+}
+.leftContent{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 12px 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.leftWord a{
+    font-size: 16px;
+    color: #848484;
+    text-decoration: none;
+}
+.leftWord a:hover{
+    color: red;
+}
+.leftWords{
+    margin-top: 3px;
+}
+.leftWords a{
+    color: #a6a6a6;
+    font-size: 14px;
+    padding-left: 7px;
+}
+.leftWords a:first-child{
+    padding-left: 0;
+}
+
+
+/* 侧边栏下拉菜单 */
+.leftDropdown{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.leftDropdownContent ul{
+    list-style: none;;
+}
+.leftDropdownContent{
+    width: 662px;
+    height: 440px;
+    position: absolute;
+    display: none;
+    top: 129px;
+    left: 274px;
+    background: #fff;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10000000;
+}
+.firstImg{
+    width: 200px;
+    height: 80px;;
+    float: left;
+    margin-left: 30px;
+    margin-top:30px;
+}
+.secondImg{
+    width: 200px;
+    height: 80px;;
+    float: left;
+    margin-left: 30px;
+    margin-top:30px;
+}
+.leftDropdownContent img{
+    width: 56px;
+    height: 56px;
+    /* display: inline-block;
+    margin-left: 50px;
+    padding-left: 51px;
+    margin-top: 44px; */
+}
+.leftDropdownContent a{
+    text-decoration: none;
+    display: block;
+}
+.leftDropdownContent span{
+    color: #777;
+    font-size: 13px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+/* .leftDropdown:hover .leftContainer{
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+}*/
+.leftDropdown:last-child:hover .leftContainer{
+    border-bottom-left-radius: 10px;
+    background-color: #ffffff;
+} 
+.leftDropdown:last-child{
+    border-bottom:0;
+}
+.leftDropdown:hover .leftContainer{
+    border-top-right-radius:0;
+    background-color: #ffffff;
+    border-bottom-right-radius: 0;
+}
+
+.rotation{
+    /* width: 1200px; */
+    height: 550px;
+    position: relative;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;      
+}
+.item  .imgindex{
+    width: 100%;
+    height: 100%;
+    /* display: inline-block; */
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+}
+.btn{
+    outline: none;
+    width: 56px;
+    font-size: 28px;
+    height: 56px;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    background-color: #86838356;
+    position: absolute;
+    top: 211px;
+    z-index: 99;
+}
+.btn:hover{
+    background-color: #868383be;
+}
+#goPre{
+    left: 286px;
+}
+#goNext{
+    right: 100px;
+}
+.imgindex.active{      
+    position: absolute;
+    z-index: 12;
+    opacity: 1;
+}
+
+
+/* 按钮 */
+.pointlist{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    bottom: 91px;
+    right: 35px;
+    z-index: 1000;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    float: left;
+    margin-left:8px; 
+}
+.point:hover{
+    background-color: #fff;
+}
+.point.active{
+    background-color: #fff;
+}
